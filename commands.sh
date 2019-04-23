@@ -19,3 +19,20 @@ for i in *.cram;
 do 
   echo `basename $i | cut -f1 -d '.'`, `samtools view --reference GRCh38_full_analysis_set_plus_decoy_hla.fa $i chrY | wc -l`;
 done
+
+#RESULTS
+HG00268, 1678244
+HG00419, 1692225
+HG00759, 1657402
+HG01595, 1777475
+HG02568, 1176896
+HG02922, 2058184
+HG03052, 1836908
+HG03642, 1561186
+NA18525, 1872109
+NA18939, 1690272
+NA19017, 1796170
+NA19625, 1760107
+NA19648, 1710430
+NA20502, 1520089
+
