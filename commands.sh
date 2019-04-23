@@ -35,4 +35,24 @@ NA19017, 1796170
 NA19625, 1760107
 NA19648, 1710430
 NA20502, 1520089
+#Discordant read pairs in female samples
+for i in *.cram;
+do 
+  echo `basename $i | cut -f1 -d '.'`, `samtools view -F 1294 --reference GRCh38_full_analysis_set_plus_decoy_hla.fa $i chrY | wc -l`;
+done
+#Results
+HG00268, 571746
+HG00419, 554684
+HG00759, 538112
+HG01595, 564943
+HG02568, 398107
+HG02922, 703997
+HG03052, 622788
+HG03642, 488164
+NA18525, 668863
+NA18939, 538635
+NA19017, 615442
+NA19625, 605821
+NA19648, 612778
+NA20502, 520145
 
