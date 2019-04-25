@@ -26,6 +26,7 @@ Table 1: Summary statistics of discordant mappings for 14 female samples of 1000
 |NA19648|37410954|20419118|1710430|602492930|6.21|54.58|0.28|
 |NA20502|34411264|18535718|1520089|637337378|5.40|53.87|0.24|
 |Average|28054966|12843538|1699121|713087147|4.14|44.94|0.24|  
+|||||||||  
 
 1. Number of discordants:  
 ```samtools view -F 1294 $cram | wc -l```  
